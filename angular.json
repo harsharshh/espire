@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "espire"
+    }
+  },
+  "defaultProject": "espire",
+  "cli": {
+    "analytics": "ae2e134c-9a46-486b-9a18-a0db05c9a14e"
+  }
 }
