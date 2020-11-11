@@ -44,7 +44,7 @@ describe('AppComponent', () => {
     const  result = app.resultMethod(['a', 'b'], []);
     expect(result).toEqual(['a', 'b']);
   });
-  it('Test case 5', () => {
+  it('Test case 6', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     const  result = app.resultMethod(['a', 'b', 'c', 'd'], ['a => b', 'b => c', 'c => a']);
