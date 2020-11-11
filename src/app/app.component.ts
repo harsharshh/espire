@@ -11,9 +11,12 @@ export class AppComponent {
 
 
   resultMethod(tasks: Array<any> = [], dependencies: any[] = []) {
+    // if tasks and dependencies are null
     if (tasks.length < 2 && dependencies.length === 0) {
       return this.result;
-    } else if (tasks.length >= 2 && dependencies.length >= 1) {
+    }
+    // if task and  dependencies are not null
+    else if (tasks.length >= 2 && dependencies.length >= 1) {
       for (let i = 0; i < dependencies.length; i++) {
         if (!!dependencies[i]) {
           let arr = dependencies[i].split('=>');
@@ -50,6 +53,7 @@ export class AppComponent {
       }
       return this.result;
     }
+    // if dependencies are null
     else if (tasks.length >= 2 && dependencies.length < 1) {
       return tasks;
     }
